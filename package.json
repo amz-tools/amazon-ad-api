@@ -1,0 +1,31 @@
+{
+  "name": "amazon-ad-api",
+  "version": "0.0.1",
+  "description": "Amazon Advertising API client",
+  "main": "index.js",
+  "directories": {
+    "lib": "./lib/"
+  },
+  "keywords": [
+    "amazon",
+    "advertising",
+    "amazon ad api",
+    "amazon-ad-api",
+    "amazon advertising api",
+    "amazon advertising api client"
+  ],
+  "author": "Jens Lübberstedt <jens@amz.tools>",
+  "license": "MIT",
+  "dependencies": {
+    "fast-xml-parser": "^3.21.1",
+    "json-bigint": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amz-tools/amazon-advertising-api.git"
+  },
+  "homepage": "https://amz.tools"
+}
