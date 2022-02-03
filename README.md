@@ -116,7 +116,7 @@ Valid properties of the config options:
 | **credentials_path**<br>*optional* | string | ~/.amzadapi/credentials | A custom absolute path to your credentials file location. |
 | **auto_request_token**<br>*optional* | boolean | true | Whether or not the client should retrieve a new access token if not given or expired. |
 | **auto_request_throttled**<br>*optional* | boolean | true | Whether or not the client should automatically retry a request when throttled. |
-| **max_retries**<br>*optional* | integer | 20 | How many retries the client should process when waiting for a report to finish or when a request is throttled. |
+| **max_retries**<br>*optional* | integer | 20 | How many retries the client should process when waiting for a report to finish or when a request is throttled. Setting this value to 0 will force the client to wait infinitely. |
 | **use_sandbox**<br>*optional* | boolean | false | Whether or not to use the sandbox endpoint. |
 
 ### Request access token
