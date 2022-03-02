@@ -261,8 +261,8 @@ Valid properties of the object:
 
 | Name | Type | Default | Description |
 |:--|:--:|:--:|:--|
-| **campaignType**<br>*required* | string | - | The campaignType of the report you want to request, currently supports `sponsoredProducts`, `sponsoredBrands` and `sponsoredDisplay`. |
-| **recordType**<br>*required* | string | - | The recordType of the report. Depends on the campaignType, but must be one of: `campaigns`, `adGroups`, `productAds`,`keywords` ,`targets`, `asins`. |
+| **campaignType**<br>*required* | string | - | The campaignType of the report you want to request, currently supports `sponsoredProducts`, `sponsoredBrands`, `sponsoredDisplay` and `brandMetrics`. |
+| **recordType**<br>*optional* | string | - | The recordType of the report. Depends on the campaignType, but must be one of: `campaigns`, `adGroups`, `productAds`,`keywords` ,`targets`, `asins`. Required for all campaignTypes except `brandMetrics`.|
 | **metricsType**<br>*optional* | string | - | Only required if `campaignType` is set to `sponsoredProducts` and `recordType` is set to `asins`. Must be either `keywords` or `targets`. |
 | **body**<br>*optional* | object | - | The input paramaters added to the body of the operation. |
 
