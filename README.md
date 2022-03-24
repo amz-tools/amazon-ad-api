@@ -263,7 +263,7 @@ Valid properties of the object:
 |:--|:--:|:--:|:--|
 | **campaignType**<br>*required* | string | - | The campaignType of the report you want to request, currently supports `sponsoredProducts`, `sponsoredBrands`, `sponsoredDisplay` and `brandMetrics`. |
 | **recordType**<br>*optional* | string | - | The recordType of the report. Depends on the campaignType, but must be one of: `campaigns`, `adGroups`, `productAds`,`keywords` ,`targets`, `asins`. Required for all campaignTypes except `brandMetrics`.|
-| **metricsType**<br>*optional* | string | - | Only required if `campaignType` is set to `sponsoredProducts` and `recordType` is set to `asins`. Must be either `keywords` or `targets`. |
+| **metricsType**<br>*optional* | string | - | Required if `campaignType` is set to `sponsoredBrands`. Must be either `hsa` or `video`. Also required if `campaignType` is set to `sponsoredProducts` and `recordType` is set to `asins`. Must be either `keywords` or `targets`. |
 | **body**<br>*optional* | object | - | The input paramaters added to the body of the operation. |
 
 NOTE: If you don't provide a list of metrics inside the body, the client will automatically default to include ALL valid metrics for the specific report.
