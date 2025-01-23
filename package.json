@@ -17,7 +17,7 @@
   "author": "Jens Lübberstedt <jens@amz.tools>",
   "license": "MIT",
   "dependencies": {
-    "fast-xml-parser": "^3.21.1",
+    "fast-xml-parser": "^4.5.1",
     "json-bigint": "^1.0.0"
   },
   "devDependencies": {
